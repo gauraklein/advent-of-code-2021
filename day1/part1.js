@@ -1,5 +1,6 @@
-const { input } = require('./input')
+const { input } = require("./input");
+const { countGreaterValues } = require("./utils");
 
-const greaterValueCount = input.reduce((val, curr, i, arr) => (curr > arr[i - 1] ? val + 1 : val), 0);
+const result = countGreaterValues(input);
 
-console.log('the number of greater values are',  greaterValueCount)
+console.log("the number of greater values are", result);
